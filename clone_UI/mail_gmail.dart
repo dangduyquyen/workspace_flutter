@@ -1,3 +1,4 @@
+import 'package:clone_ui_gmail/see_mail_gmail.dart';
 import 'package:flutter/material.dart';
 import 'package:clone_ui_gmail/chat_gmail.dart';
 import 'package:clone_ui_gmail/space_gmail.dart';
@@ -58,10 +59,205 @@ class MailGmail extends StatelessWidget {
           ),
         ),
       ),
-      body: ListView(
-        children: [
-          Text("Mail"),
-        ],
+      body: Container(
+        margin: EdgeInsets.only(top: 10), // Khoảng cách giữa AppBar và ListView
+        child: ListView(
+          children: [
+            ListTile(
+              leading: CircleAvatar(
+                radius: 30,
+                backgroundImage: AssetImage('assets/images/avata_gmail.png'),
+              ),
+              title: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Pinterest",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
+                      ),
+                      Text("6:19"),
+                    ],
+                  ),
+                  SizedBox(height: 8),
+                  Text(
+                    "Quyền, you have a good eye",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15,
+                    ),
+                  ),
+                  SizedBox(height: 8),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("Stormy Ocean Any Boarders Aesthetic...."),
+                      Icon(
+                          Icons.star_outline
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SeeMail()),
+                );
+              },
+            ),
+            ListTile(
+              leading: CircleAvatar(
+                radius: 30,
+                backgroundImage: AssetImage('assets/images/anh1.jpg'),
+              ),
+              title: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Lộc Nguyễn Xuân Tân",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
+                      ),
+                      Text("14 thg 12"),
+                    ],
+                  ),
+                  SizedBox(height: 8),
+                  Text(
+                    "Bảng tính được chia sẻ với bạn",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15,
+                    ),
+                  ),
+                  SizedBox(height: 8),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("Lộc Nguyễn Xuân Tân đã chia sẻ một...."),
+                      Icon(
+                          Icons.star_outline,
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SeeMail()),
+                );
+              },
+            ),
+            ListTile(
+              leading: CircleAvatar(
+                radius: 30,
+                backgroundImage: AssetImage('assets/images/avata_gmail.png'),
+              ),
+              title: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Pinterest",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
+                      ),
+                      Text("6:19"),
+                    ],
+                  ),
+                  SizedBox(height: 8),
+                  Text(
+                    "Quyền, you have a good eye",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                    ),
+                  ),
+                  SizedBox(height: 8),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("Stormy Ocean Any Boarders Aesthetic...."),
+                      Icon(
+                          Icons.star_outline
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SeeMail()),
+                );
+              },
+            ),
+            ListTile(
+              leading: CircleAvatar(
+                radius: 30,
+                backgroundImage: AssetImage('assets/images/avata_gmail.png'),
+              ),
+              title: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Pinterest",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
+                      ),
+                      Text("6:19"),
+                    ],
+                  ),
+                  SizedBox(height: 8),
+                  Text(
+                    "Quyền, you have a good eye",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                    ),
+                  ),
+                  SizedBox(height: 8),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("Stormy Ocean Any Boarders Aesthetic...."),
+                      Icon(
+                          Icons.star_outline
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SeeMail()),
+                );
+              },
+            ),
+
+          ],
+        ),
       ),
 
       // buttonNavigationBar
